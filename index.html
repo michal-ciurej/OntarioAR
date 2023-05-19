@@ -18,6 +18,11 @@
       
       <div class="chart">   
         <canvas id="myChart" class="data"></canvas>
+        <div id="text" class="text">
+          <div class="title">Asset 5</div>
+          <div class="body">Live issues: 0</div>
+          <div class="body">Events: 0</div>
+        </div>
       </div>
 
     </div>
@@ -34,8 +39,8 @@
         -->
         <a-entity
           position="0 0 0"
-          geometry="primitive: box; width: 1; height: 1; depth: 1"
-                  ></a-entity>
+          text="Holywell Cafe: Fridge 5"
+          ></a-entity>
       </a-marker>
 
 
@@ -68,13 +73,17 @@
       borderColor: 'rgb(155, 255, 231)',
       
     animations: {
-      tension: {
-        duration: 1000,
-        easing: 'linear',
-        from: 1,
-        to: 0.9,
-        loop: true
+      animation: {
+      x: {
+        duration: 5000,
+        from: 0
+      },
+      y: {
+        duration: 3000,
+        from: 500
       }
+    }
+  
     },
       scales: {
         y: {

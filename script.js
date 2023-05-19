@@ -4,6 +4,8 @@ AFRAME.registerComponent('markerhandler', {
         console.log("Caught Marker external");
 
         document.getElementById("myChart").style.visibility = "visible";
+        document.getElementById("text").style.visibility = "visible";
+
 
     
        
@@ -12,6 +14,8 @@ AFRAME.registerComponent('markerhandler', {
         console.log("Lost Marker external");
         
         document.getElementById("myChart").style.visibility = "hidden";
+        document.getElementById("text").style.visibility = "hidden";
+
 
     
       })

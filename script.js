@@ -13,8 +13,7 @@ AFRAME.registerComponent('markerhandler', {
       this.el.sceneEl.addEventListener('markerLost', () => {
         console.log("Lost Marker external");
         
-        document.getElementById("myChart").style.visibility = "hidden";
-        document.getElementById("text").style.visibility = "hidden";
+     
 
 
     

@@ -16,7 +16,6 @@
     align-items: start;
     height: 100%;
     margin-top: 5%;
-    visibility: hidden;
 }
 
 .title{
@@ -47,6 +46,8 @@
 #myChart{
     visibility: hidden;
 
+}
+#text{    visibility: hidden;
 }
 
 .data{
